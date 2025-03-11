@@ -341,7 +341,7 @@ contactForm.addEventListener('submit', async (e) => {
     const name = formData.get('name');
     const email = formData.get('email');
     const department = formData.get('department');
-    const Cartype = formData.get('Cartype');
+    const cartype = formData.get('cartype');
     const message = formData.get('message');
     
     // Prepare WhatsApp message
