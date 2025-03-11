@@ -345,7 +345,7 @@ contactForm.addEventListener('submit', async (e) => {
     const message = formData.get('message');
     
     // Prepare WhatsApp message
-    const whatsappMessage = `New Inquiry from Website!\n\nName: ${name}\nEmail: ${email}\nDepartment: ${department}\nMessage: ${message}`;
+    const whatsappMessage = `New Inquiry from Website!\n\nName: ${name}\nEmail: ${email}\nDepartment: ${department}\ncartype: ${cartype}\nMessage: ${message}`;
     const encodedMessage = encodeURIComponent(whatsappMessage);
     const whatsappNumber = departmentPhones[department];
     
