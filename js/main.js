@@ -327,10 +327,10 @@ inquiryButtons.forEach(button => {
 // Enhanced Contact Form
 const contactForm = document.getElementById('contactForm');
 const departmentPhones = {
-    'general': '7227013010',
+    'general': '9824143503',
     'body': '9724016252',
     'electrical': '9824965534',
-    'engine': '9824143503'
+    'engine': '9898968725'
 };
 
 contactForm.addEventListener('submit', async (e) => {
@@ -341,6 +341,7 @@ contactForm.addEventListener('submit', async (e) => {
     const name = formData.get('name');
     const email = formData.get('email');
     const department = formData.get('department');
+    const Cartype = formData.get('Cartype');
     const message = formData.get('message');
     
     // Prepare WhatsApp message
