@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raj Automobile - Your Trusted Auto Service Partner</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <h1>Raj Automobile</h1>
+        </div>
+        <div class="language-switcher">
+            <button class="lang-btn" id="langBtn">
+                <span class="current-letter">E</span>
+                <span class="current-lang">English</span>
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="lang-dropdown" id="langDropdown">
+                <a href="#" data-lang="en" class="lang-option active">
+                    <span class="lang-letter">E</span>
+                    English
+                </a>
+                <a href="#" data-lang="gu" class="lang-option">
+                    <span class="lang-letter">ગુ</span>
+                    ગુજરાતી
+                </a>
+                <a href="#" data-lang="hi" class="lang-option">
+                    <span class="lang-letter">हि</span>
+                    हिंदी
+                </a>
+            </div>
+        </div>
+        <div class="nav-toggle" id="navToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" data-trans="nav_home">Home</a></li>
+            <li><a href="#services" data-trans="nav_services">Services</a></li>
+            <li><a href="#products" data-trans="nav_products">Products</a></li>
+            <li><a href="#contact" data-trans="nav_contact">Contact</a></li>
+            <li><a href="#contact" class="nav-btn" data-trans="nav_book">Book Now</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide active" style="background-image: url('images/hero-1.jpg')">
+                    <div class="slide-content">
+                        <h1 class="animate-text" data-trans="hero_title_1">Excellence in Automobile Service</h1>
+                        <p class="quote animate-text" data-trans="hero_quote_1">Quality service isn't expensive, it's priceless</p>
+                        <div class="hero-buttons">
+                            <a href="#contact" class="btn btn-primary" data-trans="btn_book">Book Now</a>
+                            <a href="#services" class="btn btn-secondary" data-trans="btn_quote">Get a Quote</a>
+                            <a href="#products" class="btn btn-tertiary" data-trans="btn_explore">Explore More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url('images/hero-2.jpg')">
+                    <div class="slide-content">
+                        <h1 class="animate-text" data-trans="hero_title_2">Professional Auto Care Solutions</h1>
+                        <p class="quote animate-text" data-trans="hero_quote_2">Your car deserves the best care</p>
+                        <div class="hero-buttons">
+                            <a href="#contact" class="btn btn-primary" data-trans="btn_book">Book Now</a>
+                            <a href="#services" class="btn btn-secondary" data-trans="btn_quote">Get a Quote</a>
+                            <a href="#products" class="btn btn-tertiary" data-trans="btn_explore">Explore More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url('images/hero-3.jpg')">
+                    <div class="slide-content">
+                        <h1 class="animate-text" data-trans="hero_title_3">Expert Auto Repair & Maintenance</h1>
+                        <p class="quote animate-text" data-trans="hero_quote_3">Trust the experts with your vehicle</p>
+                        <div class="hero-buttons">
+                            <a href="#contact" class="btn btn-primary" data-trans="btn_book">Book Now</a>
+                            <a href="#services" class="btn btn-secondary" data-trans="btn_quote">Get a Quote</a>
+                            <a href="#products" class="btn btn-tertiary" data-trans="btn_explore">Explore More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="slider-nav prev" aria-label="Previous slide">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="slider-nav next" aria-label="Next slide">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            <div class="slider-dots">
+                <button class="dot active" aria-label="Go to slide 1"></button>
+                <button class="dot" aria-label="Go to slide 2"></button>
+                <button class="dot" aria-label="Go to slide 3"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Counter Section -->
+    <section class="counter-section">
+        <div class="counter-container">
+            <div class="counter-item">
+                <i class="fas fa-clock"></i>
+                <span class="counter" data-target="25">0</span>
+                <h3 data-trans="counter_years">Years Experience</h3>
+            </div>
+            <div class="counter-item">
+                <i class="fas fa-users"></i>
+                <span class="counter" data-target="1000000">0</span>
+                <h3 data-trans="counter_customers">Happy Customers</h3>
+            </div>
+            <div class="counter-item">
+                <i class="fas fa-tools"></i>
+                <span class="counter" data-target="2000">0</span>
+                <h3 data-trans="counter_products">Products Available</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2 class="section-title" data-trans="services_title">Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-cog service-icon"></i>
+                <h3 data-trans="service_general">General Service</h3>
+                <p data-trans="service_general_desc">Complete car maintenance and general servicing for optimal performance.</p>
+                <div class="service-details">
+                    <ul>
+                        <li data-trans="service_general_detail_1">Complete vehicle check-up & maintenance</li>
+                        <li data-trans="service_general_detail_2">Oil & fluid replacement</li>
+                        <li data-trans="service_general_detail_3">Brake system inspection & repair</li>
+                        <li data-trans="service_general_detail_4">Tire rotation & alignment</li>
+                        <li data-trans="service_general_detail_5">Battery health check-up</li>
+                    </ul>
+                </div>
+                <button class="read-more-btn" data-trans="btn_read_more">Read More</button>
+                <a href="https://wa.me/7227013010" class="inquiry-btn" data-service="General Service">
+                    <i class="fab fa-whatsapp"></i>
+                    <span data-trans="btn_inquire">Inquire Now</span>
+                </a>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-spray-can service-icon"></i>
+                <h3 data-trans="service_body">Body & Paint Work</h3>
+                <p data-trans="service_body_desc">Professional body repairs and premium quality paint services.</p>
+                <div class="service-details">
+                    <ul>
+                        <li data-trans="service_body_detail_1">Full car repainting & color matching</li>
+                        <li data-trans="service_body_detail_2">Scratch & dent removal</li>
+                        <li data-trans="service_body_detail_3">Rust treatment & prevention</li>
+                        <li data-trans="service_body_detail_4">Glass & windshield replacement</li>
+                    </ul>
+                </div>
+                <button class="read-more-btn" data-trans="btn_read_more">Read More</button>
+                <a href="https://wa.me/9724016252" class="inquiry-btn" data-service="Body & Paint Work">
+                    <i class="fab fa-whatsapp"></i>
+                    <span data-trans="btn_inquire">Inquire Now</span>
+                </a>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-bolt service-icon"></i>
+                <h3 data-trans="service_electrical">Electrical Services</h3>
+                <p data-trans="service_electrical_desc">Complete electrical system diagnostics and repairs.</p>
+                <div class="service-details">
+                    <ul>
+                        <li data-trans="service_electrical_detail_1">Battery charging & replacement</li>
+                        <li data-trans="service_electrical_detail_2">Wiring repair & diagnostics</li>
+                        <li data-trans="service_electrical_detail_3">Headlight, taillight & indicator fixes</li>
+                        <li data-trans="service_electrical_detail_4">Car audio & infotainment system repair</li>
+                    </ul>
+                </div>
+                <button class="read-more-btn" data-trans="btn_read_more">Read More</button>
+                <a href="https://wa.me/9824965534" class="inquiry-btn" data-service="Electrical Services">
+                    <i class="fab fa-whatsapp"></i>
+                    <span data-trans="btn_inquire">Inquire Now</span>
+                </a>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-car-battery service-icon"></i>
+                <h3 data-trans="service_engine">Engine Services</h3>
+                <p data-trans="service_engine_desc">Comprehensive engine repairs and maintenance services.</p>
+                <div class="service-details">
+                    <ul>
+                        <li data-trans="service_engine_detail_1">Engine diagnostics & tuning</li>
+                        <li data-trans="service_engine_detail_2">Piston & cylinder repair</li>
+                        <li data-trans="service_engine_detail_3">Fuel injector cleaning & replacement</li>
+                        <li data-trans="service_engine_detail_4">Turbocharger & cooling system service</li>
+                    </ul>
+                </div>
+                <button class="read-more-btn" data-trans="btn_read_more">Read More</button>
+                <a href="https://wa.me/9824143503" class="inquiry-btn" data-service="Engine Services">
+                    <i class="fab fa-whatsapp"></i>
+                    <span data-trans="btn_inquire">Inquire Now</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <h2 class="section-title" data-trans="products_title">Our Products</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/alternator.jpg" alt="Car Alternator">
+                </div>
+                <div class="product-content">
+                    <h3 data-trans="product_alternator">Car Alternator</h3>
+                    <p data-trans="product_alternator_desc">High-quality alternators for all car makes and models. Ensures reliable battery charging and electrical system performance.</p>
+                    <a href="#" class="inquiry-btn">
+                        <i class="fab fa-whatsapp"></i>
+                        <span data-trans="btn_inquire">Inquire Now</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/air-filter.jpg" alt="Air Filter">
+                </div>
+                <div class="product-content">
+                    <h3 data-trans="product_air_filter">Air Filter</h3>
+                    <p data-trans="product_air_filter_desc">Premium air filters designed to protect your engine by removing harmful particles and ensuring optimal airflow.</p>
+                    <a href="#" class="inquiry-btn">
+                        <i class="fab fa-whatsapp"></i>
+                        <span data-trans="btn_inquire">Inquire Now</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/diesel-filter.jpg" alt="Diesel Filter">
+                </div>
+                <div class="product-content">
+                    <h3 data-trans="product_diesel_filter">Diesel Filter</h3>
+                    <p data-trans="product_diesel_filter_desc">High-efficiency diesel filters that ensure clean fuel supply and protect your engine from contamination.</p>
+                    <a href="#" class="inquiry-btn">
+                        <i class="fab fa-whatsapp"></i>
+                        <span data-trans="btn_inquire">Inquire Now</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/engine-oil.jpg" alt="Premium Engine Oil">
+                </div>
+                <div class="product-content">
+                    <h3 data-trans="product_engine_oil">Premium Engine Oil</h3>
+                    <p data-trans="product_engine_oil_desc">High-grade engine oils for optimal engine protection and performance. Available in synthetic and mineral variants.</p>
+                    <a href="#" class="inquiry-btn">
+                        <i class="fab fa-whatsapp"></i>
+                        <span data-trans="btn_inquire">Inquire Now</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/battery.jpg" alt="Car Battery">
+                </div>
+                <div class="product-content">
+                    <h3 data-trans="product_battery">High-Performance Car Battery</h3>
+                    <p data-trans="product_battery_desc">Long-lasting, maintenance-free batteries with superior cranking power and reliability.</p>
+                    <a href="#" class="inquiry-btn">
+                        <i class="fab fa-whatsapp"></i>
+                        <span data-trans="btn_inquire">Inquire Now</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/fuel-injector.jpg" alt="Fuel Injector">
+                </div>
+                <div class="product-content">
+                    <h3 data-trans="product_fuel_injector">Petrol Fuel Injector</h3>
+                    <p data-trans="product_fuel_injector_desc">Precision-engineered fuel injectors for optimal fuel delivery and improved engine performance.</p>
+                    <a href="#" class="inquiry-btn">
+                        <i class="fab fa-whatsapp"></i>
+                        <span data-trans="btn_inquire">Inquire Now</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/break pad.jpg" alt="Brake Pads & Rotors">
+                </div>
+                <div class="product-content">
+                    <h3 data-trans="product_brake_pads">Brake Pads & Disc Rotors</h3>
+                    <p data-trans="product_brake_pads_desc">High-performance brake components for superior stopping power and safety.</p>
+                    <a href="#" class="inquiry-btn">
+                        <i class="fab fa-whatsapp"></i>
+                        <span data-trans="btn_inquire">Inquire Now</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/suspension.jpg" alt="Suspension Components">
+                </div>
+                <div class="product-content">
+                    <h3 data-trans="product_suspension">Suspension Components</h3>
+                    <p data-trans="product_suspension_desc">Quality shocks and struts for improved vehicle stability and comfort.</p>
+                    <a href="#" class="inquiry-btn">
+                        <i class="fab fa-whatsapp"></i>
+                        <span data-trans="btn_inquire">Inquire Now</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/Spark Plugs & Ignition Coils.jpg" alt="Spark Plugs">
+                </div>
+                <div class="product-content">
+                    <h3 data-trans="product_spark_plugs">Spark Plugs & Ignition Coils</h3>
+                    <p data-trans="product_spark_plugs_desc">High-quality ignition components for reliable engine starting and performance.</p>
+                    <a href="#" class="inquiry-btn">
+                        <i class="fab fa-whatsapp"></i>
+                        <span data-trans="btn_inquire">Inquire Now</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/coolant.jpg" alt="Coolant">
+                </div>
+                <div class="product-content">
+                    <h3 data-trans="product_coolant">Coolant & Radiator Fluid</h3>
+                    <p data-trans="product_coolant_desc">Premium cooling system fluids for optimal engine temperature control.</p>
+                    <a href="#" class="inquiry-btn">
+                        <i class="fab fa-whatsapp"></i>
+                        <span data-trans="btn_inquire">Inquire Now</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 class="section-title" data-trans="contact_title">Contact Us</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3 data-trans="contact_location">Our Location</h3>
+                <div class="map-preview">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3647.309925229779!2d72.42345731544384!3d23.918776984528813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395c2b7c7c649da3%3A0x7c7c77c4a6c6e6c6!2sRaj%20Automobile!5e0!3m2!1sen!2sin!4v1625147200000!5m2!1sen!2sin"
+                        width="100%" 
+                        height="300" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+                <a href="https://maps.google.com/?q=Ahmedabad+-+Palanpur+Highway+Rd,+behind+cargo+motors,+Dharti+Township,+Palanpur,+Gujarat+385001" 
+                   class="address">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p data-trans="contact_address">Ahmedabad - Palanpur Highway Rd, behind cargo motors, Dharti Township, Palanpur, Gujarat 385001</p>
+                </a>
+            </div>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required placeholder="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <select id="department" name="department" required>
+                            <option value="">Select Department</option>
+                            <option value="general">General Service</option>
+                            <option value="body">Body & Paint Work</option>
+                            <option value="electrical">Electrical Services</option>
+                            <option value="engine">Engine Services</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" required placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" data-trans="btn_send">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 data-trans="footer_quick_links">Quick Links</h3>
+                <ul>
+                    <li><a href="#home" data-trans="nav_home">Home</a></li>
+                    <li><a href="#services" data-trans="nav_services">Services</a></li>
+                    <li><a href="#products" data-trans="nav_products">Products</a></li>
+                    <li><a href="#contact" data-trans="nav_contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 data-trans="footer_services">Services</h3>
+                <ul>
+                    <li><a href="https://wa.me/7227013010" data-trans="service_general">General Service</a></li>
+                    <li><a href="https://wa.me/9724016252" data-trans="service_body">Body & Paint Work</a></li>
+                    <li><a href="https://wa.me/9824965534" data-trans="service_electrical">Electrical Services</a></li>
+                    <li><a href="https://wa.me/9824143503" data-trans="service_engine">Engine Services</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 data-trans="footer_contact_info">Contact Info</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> <a href="tel:7227013010" data-trans="footer_phone">+91 7227013010</a></li>
+                    <li><i class="fas fa-envelope"></i> <a href="mailto:info@rajautomobile.com" data-trans="footer_email">info@rajautomobile.com</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 data-trans="footer_follow_us">Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/rajautomobile_98/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61568678979915" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://wa.me/7227013010" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Raj Automobile. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 
