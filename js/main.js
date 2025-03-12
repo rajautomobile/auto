@@ -295,6 +295,15 @@ document.addEventListener('click', (e) => {
     }
 });
 
+// Step 1: Define WhatsApp numbers for services and products
+const contactNumbers = {
+    'general': '9824143503',
+    'body': '9724016252',
+    'electrical': '9824965534',
+    'engine': '9898968725',
+    'default': '7227013010' // Default number for products
+};
+
 // Enhanced WhatsApp Integration
 const inquiryButtons = document.querySelectorAll('.inquiry-btn');
 
