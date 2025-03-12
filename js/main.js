@@ -316,6 +316,7 @@ inquiryButtons.forEach(button => {
         let phoneNumber = contactNumbers['default']; // Default number
         
         if (service) {
+            phoneNumber = contactNumbers[service.toLowerCase()] || contactNumbers['default'];
             message = window.whatsappTemplates.greeting +
                      window.whatsappTemplates.service.intro + ' ' + service + '.\n\n' +
                      window.whatsappTemplates.service.details + '\n\nThank you!';
