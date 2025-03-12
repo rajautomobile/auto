@@ -313,6 +313,7 @@ inquiryButtons.forEach(button => {
         const service = button.getAttribute('data-service');
         const productCard = button.closest('.product-card');
         let message = '';
+        let phoneNumber = contactNumbers['default']; // Default number
         
         if (service) {
             message = window.whatsappTemplates.greeting +
