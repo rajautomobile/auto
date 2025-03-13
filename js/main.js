@@ -310,17 +310,18 @@ const inquiryButtons = document.querySelectorAll('.inquiry-btn');
 inquiryButtons.forEach(button => {
     button.addEventListener('click', (e) => {
         e.preventDefault();
+        
         const service = button.getAttribute('data-service');
         const productCard = button.closest('.product-card');
         let message = '';
         let phoneNumber = contactNumbers['default']; // Default number
         
         if (service) {
-            phoneNumber = contactNumbers[service.toLowerCase()] || contactNumbers['default'];
+            phoneNumber = contactNumbers[service] || contactNumbers["default"];
             message = window.whatsappTemplates.greeting +
                      window.whatsappTemplates.service.intro + ' ' + service + '.\n\n' +
                      window.whatsappTemplates.service.details + '\n\nThank you!';
-        } else {
+        } else if (productCard) {
             const productName = productCard.querySelector('h3').textContent;
             const productDesc = productCard.querySelector('p').textContent;
             message = window.whatsappTemplates.greeting +
