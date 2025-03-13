@@ -297,10 +297,10 @@ document.addEventListener('click', (e) => {
 
 // Step 1: Define WhatsApp numbers for services and products
 const contactNumbers = {
-    'general': '9824143503',
-    'body': '9724016252',
-    'electrical': '9824965534',
-    'engine': '9898968725',
+    'General Service': '9824143503',
+    'Body & Paint Work': '9724016252',
+    'Electrical Services': '9824965534',
+    'Engine Services': '9898968725',
     'default': '7227013010' // Default number for products
 };
 
@@ -331,7 +331,7 @@ inquiryButtons.forEach(button => {
         }
         
         const encodedMessage = encodeURIComponent(message);
-        window.open(`https://wa.me/${whatsappNumber}?text=${encodedMessage}`, '_blank');
+        window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, '_blank');
     });
 });
 
